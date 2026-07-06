@@ -102,15 +102,7 @@ def read_account(account_id: int):
         message = account.serialize()
 
     return jsonify(message), response_status
-def test_account_not_found(self):
-    """It should return 404 when account does not exist"""
 
-    response = self.client.get(f"{BASE_URL}/0")
-
-    self.assertEqual(
-        response.status_code,
-        status.HTTP_404_NOT_FOUND
-    )
 
 ######################################################################
 # UPDATE AN EXISTING ACCOUNT
