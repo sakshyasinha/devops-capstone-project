@@ -68,7 +68,7 @@ spec:
         - name: args
           value: "-v --with-spec --spec-color"
         - name: database_uri
-          value: "sqlite:///test.db"
+          value: postgresql://userJTA:nM2cvlWLMK8F81hk@postgresql:5432/sampledb
       workspaces:
         - name: source
           workspace: pipeline-workspace
